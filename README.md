@@ -257,3 +257,16 @@ For support and questions:
 ---
 
 **Note**: This Android app maintains feature parity with the original Flask web application while leveraging native Android capabilities and Firebase's real-time features for an enhanced mobile experience.
+## PHP Firebase Dashboard (Web)
+
+A small PHP dashboard is included in `php-dashboard/` to visualize Firebase Realtime Database data from a browser.
+
+Quick start:
+
+```bash
+export FIREBASE_DATABASE_URL="https://your-project-default-rtdb.firebaseio.com"
+export FIREBASE_DATABASE_SECRET="your_database_secret_or_token" # optional
+php -S 0.0.0.0:8080 -t php-dashboard
+```
+
+Open `http://localhost:8080` and select a Firebase path like `/users` or `/batteries`.
